@@ -5,7 +5,7 @@ import Button from 'react-bootstrap/Button';
 
 const ButtonIcon = (props) => {
   return (
-    <Button variant="light" className="bg-transparent text-dark fs-4">
+    <Button variant="light" className="bg-transparent text-dark fs-4 py-0">
       {props.children}
     </Button>
   );
