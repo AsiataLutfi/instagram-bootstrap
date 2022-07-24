@@ -1,11 +1,14 @@
 import React from 'react';
 
-// React-Bootstrap
+// react-bootstrap
 import Button from 'react-bootstrap/Button';
 
 const ButtonIcon = (props) => {
   return (
-    <Button variant="light" className="bg-transparent text-dark fs-4 py-0">
+    <Button
+      variant="light"
+      className={`bg-transparent text-dark fs-4 py-0 ${props.className}`}
+    >
       {props.children}
     </Button>
   );

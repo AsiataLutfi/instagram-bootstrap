@@ -1,41 +1,25 @@
 import React from 'react';
+
+// react-bootstrap
 import Card from 'react-bootstrap/Card';
 
-import PostImg from '../../assets/post.jpg';
-import ProfileButton from '../ui/ProfileButton/ProfileButton';
-import ButtonIcon from '../ui/ButtonIcon';
-import Button from 'react-bootstrap/Button';
+// components
+import PostHeader from './PostHeader';
+import PostFooter from './PostFooter';
+import PostComment from './PostComment';
 
-import imgProfile from '../../assets/user-1.jpg';
+// assets
+import PostImg from '../../assets/post.jpg';
 
 const Post = () => {
   return (
     <Card>
-      <Card.Header className="bg-white d-flex align-items-center justify-content-between">
-        <div className="d-flex align-items-center">
-          <ProfileButton
-            link="/"
-            image={imgProfile}
-            username="wow"
-            size={32}
-            isStory={true}
-          />{' '}
-          <Button
-            variant="link"
-            href="/"
-            className="fw-semibold text-dark text-decoration-none ms-2 p-0"
-          >
-            Link
-          </Button>
-        </div>
-        <ButtonIcon>
-          <i class="bi bi-three-dots"></i>
-        </ButtonIcon>
-      </Card.Header>
+      <PostHeader />
       <Card.Body className="p-0">
         <img src={PostImg} alt="" width="100%" height="500" />
       </Card.Body>
-      <Card.Footer className="bg-transparent">2 days ago</Card.Footer>
+      <PostFooter />
+      <PostComment />
     </Card>
   );
 };

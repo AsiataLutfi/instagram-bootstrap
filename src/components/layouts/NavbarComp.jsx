@@ -1,15 +1,19 @@
 import React from 'react';
 
-// React-Bootstrap
+// react-bootstrap
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Form from 'react-bootstrap/Form';
 import InputGroup from 'react-bootstrap/InputGroup';
 
-// Assets
-import LogoIg from '../../assets/logo.png';
+// components
 import ButtonIcon from '../ui/ButtonIcon';
+import ProfileButton from '../ui/ProfileButton/ProfileButton';
+
+// assets
+import LogoIg from '../../assets/logo.png';
+import ProfileImg from '../../assets/user-1.jpg';
 
 const NavbarComp = () => {
   return (
@@ -42,7 +46,7 @@ const NavbarComp = () => {
               />
             </InputGroup>
           </Form>
-          <Nav className="w-auto">
+          <Nav className="w-auto align-items-center">
             <ButtonIcon>
               <i className="bi bi-house-door-fill"></i>
             </ButtonIcon>
@@ -58,6 +62,13 @@ const NavbarComp = () => {
             <ButtonIcon>
               <i className="bi bi-heart-fill"></i>
             </ButtonIcon>
+            <ProfileButton
+              link="/profile"
+              size={32}
+              image={ProfileImg}
+              username="my_username"
+              className="px-2"
+            />
           </Nav>
         </Navbar.Collapse>
       </Container>
