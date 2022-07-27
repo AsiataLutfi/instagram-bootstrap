@@ -5,6 +5,7 @@
 @import '../node_modules/bootstrap/scss/functions';
 
 // 2. Include any default variable overrides here
+$primary: #712cf9;
 
 // 3. Include remainder of required Bootstrap stylesheets
 @import '../node_modules/bootstrap/scss/variables';
@@ -17,6 +18,7 @@ $custom-spacers: (
 
 $font-sizes-custom: (
   7: '14px',
+  8: '12px',
 );
 
 // Merge the maps

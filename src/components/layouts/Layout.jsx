@@ -13,10 +13,12 @@ const Layout = (props) => {
   return (
     <React.Fragment>
       <NavbarComp />
-      <Container className="my-3 px-10">
+      <Container className="my-3 px-lg-10">
         <Row>
-          <Col md="7">{props.children}</Col>
-          <Col md="5">
+          <Col md="12" lg="7">
+            {props.children}
+          </Col>
+          <Col lg="5" className="d-none d-lg-block">
             <AsideContent />
           </Col>
         </Row>

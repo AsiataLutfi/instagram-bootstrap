@@ -17,7 +17,7 @@ import ProfileImg from '../../assets/user-1.jpg';
 
 const NavbarComp = () => {
   return (
-    <Navbar bg="light" expand="lg" className="bg-transparent border-bottom">
+    <Navbar bg="white" expand="lg" className=" border-bottom" sticky="top">
       <Container>
         <Navbar.Brand href="#home">
           <img
@@ -27,50 +27,47 @@ const NavbarComp = () => {
             alt="React Bootstrap logo"
           />
         </Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Form className="mx-auto bg-secondary bg-opacity-10">
-            <InputGroup>
-              <InputGroup.Text
-                id="basic-addon1"
-                className="bg-transparent border-end-0"
-              >
-                <i className="bi bi-search"></i>
-              </InputGroup.Text>
-              <Form.Control
-                type="search"
-                placeholder="Search"
-                className="border-start-0 bg-transparent"
-                aria-label="Search"
-                aria-describedby="basic-addon1"
-              />
-            </InputGroup>
-          </Form>
-          <Nav className="w-auto align-items-center">
-            <ButtonIcon>
-              <i className="bi bi-house-door-fill"></i>
-            </ButtonIcon>
-            <ButtonIcon>
-              <i className="bi bi-messenger"></i>
-            </ButtonIcon>
-            <ButtonIcon>
-              <i className="bi bi-plus-square-fill"></i>
-            </ButtonIcon>
-            <ButtonIcon>
-              <i className="bi bi-compass-fill"></i>
-            </ButtonIcon>
-            <ButtonIcon>
-              <i className="bi bi-heart-fill"></i>
-            </ButtonIcon>
-            <ProfileButton
-              link="/profile"
-              size={32}
-              image={ProfileImg}
-              username="my_username"
-              className="px-2"
+        <Form className="mx-auto bg-secondary bg-opacity-10 d-none d-lg-block">
+          <InputGroup>
+            <InputGroup.Text
+              id="basic-addon1"
+              className="bg-transparent border-end-0"
+            >
+              <i className="bi bi-search"></i>
+            </InputGroup.Text>
+            <Form.Control
+              type="search"
+              placeholder="Search"
+              className="border-start-0 bg-transparent"
+              aria-label="Search"
+              aria-describedby="basic-addon1"
             />
-          </Nav>
-        </Navbar.Collapse>
+          </InputGroup>
+        </Form>
+        <Nav className="w-auto align-items-center flex-row">
+          <ButtonIcon>
+            <i className="bi bi-house-door-fill"></i>
+          </ButtonIcon>
+          <ButtonIcon>
+            <i className="bi bi-messenger"></i>
+          </ButtonIcon>
+          <ButtonIcon>
+            <i className="bi bi-plus-square-fill"></i>
+          </ButtonIcon>
+          <ButtonIcon>
+            <i className="bi bi-compass-fill"></i>
+          </ButtonIcon>
+          <ButtonIcon>
+            <i className="bi bi-heart-fill"></i>
+          </ButtonIcon>
+          <ProfileButton
+            link="/profile"
+            size={32}
+            image={ProfileImg}
+            username="my_username"
+            className="px-2"
+          />
+        </Nav>
       </Container>
     </Navbar>
   );

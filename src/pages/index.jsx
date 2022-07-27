@@ -1,11 +1,13 @@
 import React from 'react';
 import Post from '../components/post/Post';
+import Stories from '../components/stories/Stories';
 
 const Home = () => {
   return (
-    <div>
+    <React.Fragment>
+      <Stories />
       <Post />
-    </div>
+    </React.Fragment>
   );
 };
 

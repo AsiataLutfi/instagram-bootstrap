@@ -5,8 +5,8 @@ import Card from 'react-bootstrap/Card';
 
 // components
 import PostHeader from './PostHeader';
-import PostFooter from './PostFooter';
-import PostComment from './PostComment';
+import PostFooter from './PostFooter/PostFooter';
+import PostComment from './PostFooter/PostComment';
 
 // assets
 import PostImg from '../../assets/post.jpg';
