@@ -51,10 +51,10 @@ const NavbarComp = () => {
           <ButtonIcon>
             <i className="bi bi-messenger"></i>
           </ButtonIcon>
-          <ButtonIcon>
+          <ButtonIcon className="d-none d-lg-block">
             <i className="bi bi-plus-square-fill"></i>
           </ButtonIcon>
-          <ButtonIcon>
+          <ButtonIcon className="d-none d-lg-block">
             <i className="bi bi-compass-fill"></i>
           </ButtonIcon>
           <ButtonIcon>
