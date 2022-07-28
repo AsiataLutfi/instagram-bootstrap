@@ -5,7 +5,7 @@ import Button from 'react-bootstrap/Button';
 
 const Footer = () => {
   return (
-    <footer className=" text-secondary ">
+    <footer className=" text-secondary mt-3">
       <div className="d-flex flex-wrap align-items-center mb-3">
         <Button
           variant="link"

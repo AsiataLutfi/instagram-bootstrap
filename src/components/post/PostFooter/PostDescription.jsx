@@ -26,7 +26,7 @@ const PostDescription = () => {
       <Button
         variant="link"
         href="/"
-        className="fw-semibold text-dark p-0 me-2 align-text-bottom"
+        className="fw-semibold text-dark p-0 me-2 align-baseline"
       >
         Link
       </Button>
